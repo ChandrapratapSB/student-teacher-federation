@@ -4,7 +4,7 @@ import { Teacher } from './teacher.entity';
 
 @ObjectType()
 @Directive('@key(fields: "id")')
-@Entity()
+@Entity('student')
 export class Student {
 
   @Field((type) => ID)

@@ -1,0 +1,21 @@
+{
+  "name": "pro",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ChandrapratapSB/student-teacher-federation.git",
+  "author": "Chandra Pratap <cpsb20@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build"
+  },
+  "workspaces": [
+    "student-gql-api",
+    "teacher-gql-api",
+    "federation-gateway"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
