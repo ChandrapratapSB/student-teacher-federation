@@ -1,5 +1,5 @@
 {
-  "name": "pro",
+  "name": "student-teacher-federation",
   "private": "true",
   "version": "1.0.0",
   "main": "index.js",
@@ -8,7 +8,10 @@
   "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "start:student": "yarn workspace student-gql-api start:dev",
+    "start:teacher": "yarn workspace teacher-gql-api start:dev",
+    "start:federation": "yarn workspace federation-gateway start:dev"
   },
   "workspaces": [
     "student-gql-api",
